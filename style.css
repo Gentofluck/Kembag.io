@@ -1,382 +1,137 @@
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
-#first_photo{
-    max-width: 608px;
-    max-height: 740px;
-}
-/*контейнеры*/
 .container{
-    max-width: 1168px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 80px;
-    width: 100%;
-}
-.in_two{
-    margin-bottom: 142px;
-    max-width: 1280px;
-    display: flex;
-    justify-content: start;
-    margin-left: auto;
-    margin-right: auto;
-}
-.space_between{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.plants{
-    margin-bottom: 16px;
-}
-.visit_shop_container{
-    background: #F3F4F6;
-    align-items: center;
-}
-.info{
-    border-top: 1px solid #E0E0E0;
-    max-width: 1280px;
-    height: 268px;
-    margin-left: auto;
-    margin-right: auto;
-}
-/*контейнеры выше*/
-
-/*правая колонка первого контейнера*/
-.h1_txt{
-    max-width: 523px;
-    margin: 105px 0;
-}
-.right_column{
+    max-width: 1200px;
     margin: 0 auto;
 }
 .header{
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 45px;
-    max-width: 523px;
-    min-width: 410px;
-    width: calc(100vw - 757px);
+    border-bottom: 1px solid black;
+    padding: 16px 0;
+    margin-bottom: 48px;
 }
-#form_one{
-    display: flex;
-    align-items: center;
-}
-.head_icon{
-    width: 20px;
-    height: 20px;
-    background-size: cover;
-}
-#search{
-    max-width: 213px;
-    width: calc(100vw - 1067px);
-    min-width: 92px;
-}
-#magnifying_glass{
-    background-image: url("img/search.png");
-    background-color: white;
-    border: none;
-    margin-right: 40px;
-}
-#shopping_cart{
-    background-image: url("img/shopping-cart.png");
-    margin-right: 8px;
-}
-/*правая колонка первого контейнера выше*/
+.header__logo{
+    font-weight: 700;
+    font-size: 24px;
 
-/*кнопки*/
-.button{
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    color: black;
     text-decoration: none;
+}
+.header__items{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.header__item:not(:last-child){
+    margin-right: 25px;
+}
+.welcome{
+    padding: 48px 0;
+    margin-bottom: 48px;
+}
+.welcome__title{
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 21px;
+}
+.welcome__subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    max-width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 21px;
+}
+.welcome__links{
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    background-color: #156963;
+    flex-wrap: wrap;
+}
+.welcome__link:first-child{
+    margin-right:16px;
+}
+.button{
+    background: black;
     color: white;
+    padding: 8px 16px;
+    border: 1px solid black;
 }
-.b_first_head{
+.welcome__link:hover{
     background-color: white;
-    color: #156963;
-    width: 111px;
-    height: 36px;
+    color: black;
 }
-.b_second_head{
-    width: 111px;
-    height: 36px;
-}
-.b_shop{
-    width: 152px;
-    height: 40px;
-}
-.b_submit{
-    width: 51px;
-    height: 22px;
-    border-radius: 2px;
-    font-weight: 500;
-    font-size: 8px;
-    line-height: 14px;
-}
-.button_shadow{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-/*кнопки выше*/
-
-/*Шрифты*/
-.benifit_txt{
-    margin: 0;
+.products__title{
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    color: #156963;
-}
-.h_buy_more{
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 56px;
-    margin: 0 0 16px;
-    color: #2C1500;
-}
-.price{
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-}
-.logo{
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: 0.05em;
-    color: #156963;
-    margin: 0 0 24px;
-}
-.heading_text{
-    font-weight: 500;
-    font-size: 68px;
-    line-height: 83px;
-    color: #156963;
-    margin-bottom: 24px;
-    margin-top: 0;
-}
-.featured_plants{
-    font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #E0E0E0;
-    margin-bottom: 31px;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 32px;
 }
-.h_info{
-    margin: 0 0 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+.item__img{
+    width:180px;
+    height:180px;
+    background: #c4c4c4;
+    margin-bottom: 16px;
 }
-.standart_text{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    color: #2C1500;
-    opacity: 0.8;
-    margin: 0;
+.item__name{
+    font-weight:700;
+    font-size:18px;
+    margin-bottom: 4px;
 }
-.mini_txt{
-    margin: 0 0 0 0;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 16px;
+.item_info{
+    margin-bottom: 16px;
 }
-.name_of_plant{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 8px;
+.item__male{
+    font-weight:500;
+    font-size:14px;
+    color:#878787;
+    margin-bottom: 16px;
 }
-.little_info{
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
-    color: #4F4F4F;
-    margin: 0 0;
+.item__btn{
+    display:inline-block;
 }
-.info_simple_txt{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
-}
-#email{
-    padding:8px 87px 8px 13px ;
-    border: 1px solid #bdbdbd;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #000000;
-    opacity: 0.5;
-    margin: 0 0 14px 0;
-}
-
-.margin_bottom_20{
-    margin: 20px 0;
-}
-.margin_bottom_14{
-    margin: 14px 0;
-}
-
-/*шрифты выше*/
-
-/*Преимущества*/
-.icon_benifit{
-    width: 48px;
-    height: 48px;
-    margin-right: 16px;
-}
-#fast{
-    background-image: url("img/fast.svg");
-}
-#headphones{
-    background-image: url("img/headphones.svg");
-}
-#plant{
-    background-image: url("img/plant.svg");
-}
-#dollar-symbol{
-    background-image: url("img/dollar-symbol.svg");
-}
-.icon_benifit_text{
+.products__items{
     display: flex;
-    justify-content: start;
-    align-items:center;
-    margin-bottom: 16px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.benifit{
-    width: 236px;
-    border: 1px solid #E0E0E0;
-    padding: 22px 16px 21px 16px;
-}
-/*Преимущества выше*/
-
-/*3 контейнер*/
-.flower{
-    width: 217px;
-    height: 217px;
-}
-#flower_one{
-    background-image: url("img/Cactus1.jpg");
-}
-#flower_two{
-    background-image: url("img/Cactus2.jpg");
-}
-#flower_fhree{
-    background-image: url("img/Cactus3.jpg");
-}
-#flower_four{
-    background-image: url("img/Cactus4.jpg");
-}
-#flower_five{
-    background-image: url("img/Cactus5.jpg");
-}
-/*3 контейнер выше */
-
-/*4 контейнер*/
-.buy_more_first_clm{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.buy_more_txt{
-    margin-bottom: 74px;
-    max-width: 522px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.bottom_16{
-    margin: 0;
-    margin-bottom: 16px;
+.products{
+    margin-bottom: 48px
 }
 
-/*4 контейнер выше*/
-
-/*5 контейнер*/
-.plant_on_hand{
-    width: 480px;
-    height: 360px;
-    background-image: url("img/Best_plant.jpg");
-    background-position: center;
-}
-.buy_now_txt{
-    max-width:585px;
-    margin-left: 97px;
-}
-/*5 контейнер выше */
-
-
-.first_clm_info{
-    width: 282px;
-}
-.footer{
-    max-width: 946px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 65px;
-    margin-bottom: 65px;
-}
-/*5 контейнер выше*/
-
-@media screen and (max-width:1180px) {
-    .container{
-        max-width: 608px;
+@media (max-width: 761px){
+    .products__item{
+        margin-bottom: 30px;
     }
-    .container:nth-last-child(-n+2){
-        justify-content: center;
+}
+@media (max-width: 400px){
+    .welcome__link{
+        margin-bottom: 30px;
     }
-    .in_two{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    #search{
-        max-width: 213px;
-        width: calc(100vw - 395px);
+    .header__items{
+        display:none;
     }
     .header{
-        max-width: 523px;
-        width: calc(100vw - 85px);
-        margin-left: auto;
-        margin-right: auto;
+        justify-content: center;
     }
-    .benifit{
-        margin-bottom: 68px;
+    .products__items{
+        justify-content: center;
     }
-    .product_items{
-        margin-bottom: 68px;
+    .products__title{
+        justify-content: center;
     }
-    .buy_now_txt{
-        margin-left:auto;
-        margin-right: auto;
+    .welcome__title{
+        font-size: 17px;
     }
-    .b_shop{
-        margin-bottom: 16px;
-    }
-    .buy_more_first_clm{
-        margin-bottom: 16px;
-    }
-}
-@media screen and (max-width:607px) {
-    #first_photo{
-        width: 100%;
-    }
-    #white_room{
-        width:100%;
-    }
-    #more_plants{
-        width:100%;
-    }
-    
 }
